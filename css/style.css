@@ -1,0 +1,44 @@
+nav li{
+    width: 15%;
+    border: 2px solid rgb(59, 59, 59);
+    padding: 10px;
+    margin: 20px 10px 10px 20px;
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(219, 202, 179);
+}
+
+nav li:hover{
+    background-color: cornsilk;
+}
+
+img{
+    border: 3px solid rgb(134, 99, 48);
+    border-radius: 10px;
+    width: 250px;
+    margin: 20px;
+    padding: 5px;
+}
+
+img:hover{
+    filter:grayscale(70%);
+}
+
+h1{
+    margin: 40px;
+    text-align: center;
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    margin: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Times New Roman', Verdana, Tahoma, sans-serif;
+}
+
+footer p{
+    font-size: 14px;
+    text-align: center;
+}
