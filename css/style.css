@@ -83,19 +83,22 @@ footer p{
     margin-top: 50px;
     margin-bottom: 50px;
     animation-name: bundAnimation;
-    animation-duration: 5s;
+    animation-duration: 2s;
 }
 
 @keyframes bundAnimation {
-    0% {width: 250px; opacity: 0;}
-    50% {width: 300px; opacity: 0.7;}
-    100% {width: 250px; opacity: 1;}
+    /* 0% {width: 10%; opacity: 0;}
+    25%{width: 20%; opacity: 0.4;}
+    50% {width: 30%; opacity: 0.6;}
+    100% {width: 50%; opacity: 1;} */
+    0% {transform: rotate(10deg); }
+    100% {transform: rotate(-10deg); }
 }
 
 /* the contact form */
 
 
-legend{ 
+legend{
     font-size: 125%;
     text-transform: uppercase;
     text-align: center;
@@ -142,9 +145,9 @@ input[type=submit] {
     background-color: black;
     color: white;
     padding: 20px 25px;
-    margin: 8px 0;
+    margin: 10px 0;
     border: none;
-    border-radius: 6px;
+    border-radius: 5px;
     cursor: pointer;
     width: 100%;
   }
@@ -157,6 +160,12 @@ input[type=submit]:hover {
 
 
 
+@media (prefers-reduced-motion) {
+    #bund{
+        animation-name: dissolve;
+    }
+
+}
 
 @media screen and (min-width: 950px) {
 
@@ -200,4 +209,4 @@ div + label{
       line-height: 25vh;
       vertical-align:top;
    }
-  }
+}
