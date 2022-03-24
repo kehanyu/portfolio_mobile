@@ -7,6 +7,8 @@
 	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9157b1a671.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P3MXVZGKY5"></script>
 <script>
@@ -22,8 +24,8 @@
 <body>
 	<header>
         <nav>
-            <ul>
-                <li><a href = "index.html">Travel in Shanghai</a></li>
+            <ul class="nav_links">
+                <li><a class ="index" href = "index.html">Travel in Shanghai</a></li>
                 <li><a href = "coffeeshops.html">Coffee Shops</a></li>
                 <li><a href = "placestovisit.html">Places to Visit</a></li>
                 <li><a href = "foodanddrink.html">Food and Drink</a></li>
@@ -34,16 +36,19 @@
 
 
 	<main>
-		<p>Shanghai is one of the 4 major cities in China and it's the largest and richest 
+        <div class="intro">
+
+        <div class="overview"><p>Shanghai is one of the 4 major cities in China and it's the largest and richest 
             and one of the worlds most populated cities. This huge city is located on the 
             east coast of China and is a financial hub and home to the worlds busiest 
             container port. Shanghai has a futuristic skyline that overlooks colonial-style 
             buildings. There are many areas of Shanghai to explore, and the city has a huge 
             food scene from high-end to more budget-friendly eats. This Shanghai city guide 
             covers all of the top sights and attractions to see, what neighbourhoods to explore 
-            in the city and what and where to eat, as well as some travel tips.</p>
+            in the city and what and where to eat, as well as some travel tips.</p></div>
         
-        <img src = "images/the_bund.jpg" alt="the Bund Shanghai with many skyscrapers along the bank of the Huangpu River" width="200"/>
+        <img id="bund" src = "images/the_bund.jpg" alt="the Bund Shanghai with many skyscrapers along the bank of the Huangpu River" width="200"/>
+    </div>
 
 		<p>The best way to get round Shanghai is by metro and shared bicycles. 
             Shanghai has one of the most robust metro systems in the world, and it
@@ -67,14 +72,43 @@
            pay extra money for going to the gym. Using shared bicycles to see the city could be a great experience,
            as you can explore the attractions, streets, and cute stores at your own pace.</p>
   
-           
+        <div class="transportation">
            <img src = "images/metro.jpg" alt="A Line 1 Shanghai metro is reaching a station" width="200"/>
            <img src = "images/metro_window.jpg" alt="Through the metro's window we can see that the metro is full of passengers" width="200"/>
            <img src = "images/bicycle.jpg" alt="A man is riding a shared bicycles on the street" width="200"/>
+        </div>
+
+           <form
+  action="https://formspree.io/f/mpzblvbp"
+  method="POST">
+  <fieldset>
+    <legend>Contact me</legend>
+
+    <label for="name_id">Your Name</label>
+    <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+
+    <label for="email_id">Your Email</label>
+    <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+
+    <label for="phone_id">Your Phone Number</label>
+    <input type="tel" name="phone" id = "phone_id" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <div><span>Format: 123-456-7890</span></div>
+
+
+    <label for="msg">Message</label>
+    <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+
+    <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+    <label for ="cBox">Remember me</label>
+    <br>
+    <input type="submit" value = "Send">
+  </fieldset>
+ </form>
 	</main>
 
 	<footer>
-		<p>Travel in Shanghai &copy; 2022</p>
+		<p>Kehan Yu &copy; 2022</p>
+        <p><a href="https://moirayu.com"><i class="fa-solid fa-laptop"></i> Kehan's Website</a></p>
 	</footer>
 </body>
 </html>
