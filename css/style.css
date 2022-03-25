@@ -180,12 +180,12 @@ input[type=checkbox]{
 input[type=submit] {
     background-color: black;
     color: white;
-    padding: 20px 25px;
+    padding: 25px 25px;
     margin: 10px 0;
-    border: none;
-    border-radius: 5px;
+    /* border: none; */
+    border-radius: 2px;
     cursor: pointer;
-    width: 40%;
+    width: 50%;
     justify-content: center;
   }
   
