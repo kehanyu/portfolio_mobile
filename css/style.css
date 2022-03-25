@@ -5,6 +5,27 @@ body{
     line-height: normal;
 }
 
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+
+
+*:focus{
+    border: 2px solid black;
+}
 
 li a{
     padding: 15px;
@@ -61,11 +82,26 @@ footer p{
 }
 
 /* use of flex */
-.transportation, .cafe, .place_img, .food_img{
+.transportation, .cafe, .food_img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/* use of grid */
+.place_img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.place_img img{
+    width: 50%;
+}
+
+
+
 
 .nanjing, .nightBund{
     display: block;
@@ -109,7 +145,7 @@ legend{
   label{
     display: inline-block;
     margin-right:10px;
-    width:15%;
+    width:50%;
   }
   input {
     width: 100%;
@@ -149,7 +185,8 @@ input[type=submit] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 40%;
+    justify-content: center;
   }
   
 input[type=submit]:hover {

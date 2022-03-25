@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
 	<header>
         <nav>
             <ul class="nav_links">
@@ -31,11 +32,10 @@
                 <li><a href = "foodanddrink.html">Food and Drink</a></li>
             </ul>
         </nav>
-        <h1>A Travel Guide to Shanghai</h1>
 	</header>
 
-
-	<main>
+	<main class="about" id="skip">
+        <h1>A Travel Guide to Shanghai</h1>
         <div class="intro">
 
         <div class="overview"><p>Shanghai is one of the 4 major cities in China and it's the largest and richest 
@@ -98,9 +98,9 @@
     <label for="msg">Message</label>
     <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
 
-    <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+    <!-- <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
     <label for ="cBox">Remember me</label>
-    <br>
+    <br> -->
     <input type="submit" value = "Send">
   </fieldset>
  </form>
